@@ -32,12 +32,18 @@ function Sindebarhr() {
         <li className="nav-item">
           <a className="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
             <i className="icon-columns menu-icon" />
-            <span className="menu-title">ระบบลงเวลา</span>
+            <span className="menu-title">งานบุคลากร</span>
             <i className="menu-arrow" />
           </a>
           <div className="collapse" id="form-elements">
             <ul className="nav flex-column sub-menu">
-              <li className="nav-item"><a className="nav-link" href="pages/forms/basic_elements.html">ข้อมูลการลงเวลา</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ลงเวลาปฏิบัติงาน</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">การลา</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ระบบเงินเดือน</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ระบบประเมินผลงาน</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ระบบฝึกอบรม</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ค่าตอบแทน</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ระบบพ้นสภาพพนักงาน</a></li>
             </ul>
           </div>
         </li>
@@ -45,12 +51,12 @@ function Sindebarhr() {
         <li className="nav-item">
           <a className="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
             <i className="icon-bar-graph menu-icon" />
-            <span className="menu-title">Charts</span>
+            <span className="menu-title">งานเอกสาร</span>
             <i className="menu-arrow" />
           </a>
           <div className="collapse" id="charts">
             <ul className="nav flex-column sub-menu">
-              <li className="nav-item"><a className="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">ChartJs</a></li>
             </ul>
           </div>
         </li>
@@ -58,12 +64,12 @@ function Sindebarhr() {
         <li className="nav-item">
           <a className="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
             <i className="icon-grid-2 menu-icon" />
-            <span className="menu-title">Tables</span>
+            <span className="menu-title">ระบบรายงาน</span>
             <i className="menu-arrow" />
           </a>
           <div className="collapse" id="tables">
             <ul className="nav flex-column sub-menu">
-              <li className="nav-item"><a className="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Basic table</a></li>
             </ul>
           </div>
         </li>
@@ -71,12 +77,12 @@ function Sindebarhr() {
         <li className="nav-item">
           <a className="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
             <i className="icon-contract menu-icon" />
-            <span className="menu-title">Icons</span>
+            <span className="menu-title">ระบบสิทธิ์และความปลอดภัยข้อมูล</span>
             <i className="menu-arrow" />
           </a>
           <div className="collapse" id="icons">
             <ul className="nav flex-column sub-menu">
-              <li className="nav-item"><a className="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Mdi icons</a></li>
             </ul>
           </div>
         </li>
