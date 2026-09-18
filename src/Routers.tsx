@@ -1,39 +1,48 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-/* Admin */
+/* Layouts */
 import Adminlayout from '../src/Layouts/Layoutadmin';
+import LayoutHR from './Layouts/LayoutHR';
+import LayoutUser from './Layouts/LayoutUser';
+/* Pages */
 import Homeadmin from '../src/Pages/Homes/Homeadmin';
+import Homehr from './Pages/Homes/Homehr';
+import Homeuser from './Pages/Homes/Homeuser';
 import Login from './Pages/Login/Frmlogin';
 
+/* Admin */
+import Offices from './Pages/Offices/Frmoffice';
+import Personal from './Pages/Personals/Frmpersonal';
+
+/* HR */
+import Aattendancedefault from './Pages/Timeattendance/Frmaattendancedefault';
+import Aattendancescan from './Pages/Timeattendance/Frmaattendancescan';
 
 function Routers() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path="/Admin" element={<Adminlayout/>}>
-          <Route path="/Admin" element={<Homeadmin/>} />
-          <Route path="/Admin/Office" element={''} />
-          <Route path="/Admin/Computer" element={''} />
-          <Route path='/Admin/Lending' element={''} />
-          <Route path='/Admin/Return' element={''} />
-          <Route path="/Admin/Reportaproblem" element={''} />
-          <Route path="/Admin/Informrepair" element={''} />
-          <Route path="/Admin/Workload" element={''} />
-          <Route path="/Admin/Jobdescription" element={''} />
+
+        <Route path="/" element={<Login />} />
+
+        <Route path="/admin" element={<Adminlayout />}>
+          <Route index element={<Homeadmin />} />
+          <Route path="Offices" element={<Offices />} />
+          <Route path="Personal/:id" element={<Personal />} />
         </Route>
-        <Route path="/User" element={''}>
-          <Route path="/User" element={''} />
-          <Route path="/User/Informrepair" element={''} />
-          <Route path="/User/Reportaproblem" element={''} />
-          <Route path='/User/Lending' element={''} />
-          <Route path='/User/Return' element={''} />
+
+        <Route path="/hr" element={<LayoutHR />}>
+          <Route index element={<Homehr />} />
+          <Route path="Aattendancedefault/:id" element={<Aattendancedefault />} />
+          <Route path="Aattendancescan/:id" element={<Aattendancescan />} />
         </Route>
-        {/* <Route path='/not_found' element={<PathNotFound />} />*/}
-       
+
+        <Route path="/user" element={<LayoutUser />}>
+          <Route index element={<Homeuser />} />
+        </Route>
       </Routes>
-    </BrowserRouter >
-  )
+    </BrowserRouter>
+  );
 }
 
-export default Routers
+export default Routers;

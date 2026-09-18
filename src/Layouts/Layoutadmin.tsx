@@ -7,18 +7,20 @@ import Sidebar from "../Sidebars/Sindebaradmin";
 import Footers from "../Footers/Footeradmin";
 
 function Layoutadmin() {
-  return (
-    <Layout>
-            <Header/>
-            <Sidebar/>
-            <div className="page-wrapper">
-                <Content>
-                    <Outlet/>
-                </Content>
-                <Footers/>
+    return (
+        <Layout className="container-scroller">
+            <Header />
+            <div className="container-fluid page-body-wrapper">
+                <Sidebar />
+                <div className="main-panel">
+                    <Content>
+                        <Outlet />
+                    </Content>
+                    <Footers />
+                </div>
             </div>
         </Layout>
-  )
+    )
 }
 
 export default Layoutadmin
