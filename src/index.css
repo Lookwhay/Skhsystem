@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1a2433;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font-family: 'Prompt', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
