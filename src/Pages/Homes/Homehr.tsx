@@ -11,6 +11,7 @@ import {
     ScanOutlined
 } from '@ant-design/icons';
 import StatCardsSection from './StatCardsSection';
+import WeatherCard from '../../Models/WeatherCard';
 
 function Homehr() {
 
@@ -96,23 +97,9 @@ function Homehr() {
 
             <div className="row">
                 <div className="col-md-6 grid-margin stretch-card">
-                    <div className="card tale-bg">
-                        <div className="card-people mt-auto">
-                            <img src="images/dashboard/people.svg" alt="people" />
-                            <div className="weather-info">
-                                <div className="d-flex">
-                                    <div>
-                                        <h2 className="mb-0 font-weight-normal"><i className="icon-sun mr-2" />31<sup>C</sup></h2>
-                                    </div>
-                                    <div className="ml-2">
-                                        <h4 className="location font-weight-normal">วันจันทร์</h4>
-                                        <h6 className="font-weight-normal">Monday</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <WeatherCard/>
                 </div>
+
                 <div className="col-md-6 grid-margin transparent">
                     <div className="row">
                         <div className="col-md-6 mb-4 stretch-card transparent">
@@ -155,6 +142,7 @@ function Homehr() {
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div className="row">
